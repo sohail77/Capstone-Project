@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Patternizer</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="content_authority">com.sohail.patternizer</string>
+    <string name="sync_account_type">patternizer.sohail.com</string>
+
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="share">Share</string>
+    <string name="cancel">Cancel</string>
+    <string name="set_wallpaper">OK</string>
+    <string name="set_wallpaper_msg">Are you sure you want to set this image as your wallpaper?</string>
+    <string name="by">By</string>
+    <string name="no_info_available">No content available</string>
+
+    <string name="views">Views</string>
+    <string name="likes">Likes</string>
+    <string name="content_desc_likes">Likes</string>
+    <string name="content_desc_views">Views</string>
+    <string name="content_desc_share">Share</string>
+    <string name="content_desc_set_wallpaper">Set wallpaper</string>
+</resources>
