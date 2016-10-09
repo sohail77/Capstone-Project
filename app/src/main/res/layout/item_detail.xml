@@ -70,8 +70,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:contentDescription="@string/content_desc_likes"/>
-                <!--android:src="@drawable/ic_thumb_up_black_48dp" -->
+                android:contentDescription="@string/content_desc_likes"
+                android:src="@drawable/thumb"/>
 
             <TextView
                 android:id="@+id/likesTextView"
@@ -100,8 +100,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:contentDescription="@string/content_desc_views"/>
-               <!-- android:src="@drawable/ic_remove_red_eye_black_48dp"-->
+                android:contentDescription="@string/content_desc_views"
+                android:src="@drawable/eye"/>
 
             <TextView
                 android:id="@+id/viewsTextView"
@@ -132,8 +132,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:background="?selectableItemBackgroundBorderless"
-                android:contentDescription="@string/content_desc_share"/>
-               <!-- android:src="@drawable/ic_share_black_48dp"-->
+                android:contentDescription="@string/content_desc_share"
+             android:src="@drawable/share"/>
 
             <TextView
                 android:id="@+id/shareTextView"

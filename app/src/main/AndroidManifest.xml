@@ -74,7 +74,7 @@
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
                 <action android:name="com.sohail.patternizer.ACTION_DATA_UPDATED" />
             </intent-filter>
-            <meta-data android:name=".widget.WidgetService"
+            <meta-data android:name="android.appwidget.provider"
                 android:resource="@xml/appwidget_info">
 
             </meta-data>
@@ -83,7 +83,7 @@
 
         <service android:name=".widget.WidgetService"
             android:permission="android.permission.BIND_REMOTEVIEWS"
-            android:exported="true" >
+            android:exported="false" >
 
         </service>
     </application>
