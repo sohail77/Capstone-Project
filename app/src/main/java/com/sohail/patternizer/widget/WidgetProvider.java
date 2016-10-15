@@ -1,6 +1,7 @@
 package com.sohail.patternizer.widget;
 
 import android.annotation.TargetApi;
+import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProvider;
 import android.content.ComponentName;
@@ -10,6 +11,7 @@ import android.os.Build;
 import android.support.annotation.NonNull;
 import android.widget.RemoteViews;
 
+import com.sohail.patternizer.MainActivity;
 import com.sohail.patternizer.R;
 import com.sohail.patternizer.sync.PatternizerSyncAdapter;
 
@@ -28,6 +30,11 @@ public class WidgetProvider extends AppWidgetProvider {
 
 
             RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.widget_layout);
+            Intent intent = new Intent(context, MainActivity.class);
+            PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
+
+
+            views.setOnClickPendingIntent(R.id.widget_layout, pendingIntent);
 
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
                 setRemoteAdapter(context, views);

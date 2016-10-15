@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "11508354636",
+    "project_id": "firebase-patternizer"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:11508354636:android:171555f48cd91aff",
+        "android_client_info": {
+          "package_name": "com.sohail.patternizer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcrBpVnkHNrqUIOkhvSYdXxF6BlQQORXg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-85757990-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

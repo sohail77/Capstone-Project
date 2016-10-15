@@ -93,18 +93,18 @@ public class Detail_Activity_Fragment extends Fragment{
         View rootView = inflater.inflate(R.layout.fragment_detail__activity_, container, false);
         ButterKnife.bind(this, rootView);
         initUI();
-        //trackScreen();
+        trackScreen();
         return rootView;
     }
 
-//    private void trackScreen() {
-//        if (mItem != null) {
-//            BaseApplication application = (BaseApplication) getActivity().getApplication();
-//            mTracker = application.getDefaultTracker();
-//            mTracker.setScreenName("Title: " + mItem.getTitle());
-//            mTracker.send(new HitBuilders.ScreenViewBuilder().build());
-//        }
-//    }
+    private void trackScreen() {
+        if (mItem != null) {
+            BaseApplication application = (BaseApplication) getActivity().getApplication();
+            mTracker = application.getDefaultTracker();
+            mTracker.setScreenName("Title: " + mItem.getTitle());
+            mTracker.send(new HitBuilders.ScreenViewBuilder().build());
+        }
+    }
 
     @TargetApi(Build.VERSION_CODES.M)
     private void initUI() {
