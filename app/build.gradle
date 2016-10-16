@@ -14,7 +14,7 @@ android {
     }
 
     signingConfigs {
-        release {
+        config {
             keyAlias 'patternizer'
             keyPassword 'Killer.77'
             storeFile file('patternizer.jks')
@@ -23,9 +23,12 @@ android {
     }
     buildTypes {
         release {
-            signingConfig signingConfigs.release
+            signingConfig signingConfigs.config
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.config
         }
     }
 }
